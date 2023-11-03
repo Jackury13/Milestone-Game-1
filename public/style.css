@@ -62,8 +62,9 @@ body {
   margin-bottom: 10px;
 }
 
-.game-box .guesses-text b {
+.game-box .guesses-text p {
     color: rgb(121, 8, 8);
+  
 }
 
 .game-box .keyboard {

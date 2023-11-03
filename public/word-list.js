@@ -10,7 +10,7 @@ const wordList = [
         hint: "What started the zombie plague",
 
         word: "double tap",
-        hint: " rule #2 in the movie 'Zombieland'"
+        hint: "rule #2 in the movie 'Zombieland'"
 
     }
     ]
