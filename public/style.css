@@ -4,13 +4,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(https://images.pexels.com/photos/5409941/pexels-photo-5409941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    background-image: url(https://images.pexels.com/photos/5409941/pexels-photo-5409941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     font-family: Nosifer;
 }
 
 .container {
     width: 850px;
-    background: grey;
+    background: rgb(216, 214, 214);
     display: flex;
     gap: 70px;
     align-items: flex-end;
@@ -62,19 +62,41 @@ body {
   margin-bottom: 10px;
 }
 
-.game-box .guesses-text p {
+.game-box .guesses-text b {
     color: rgb(121, 8, 8);
 }
 
 .game-box .keyboard {
   display: flex;
-
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .keyboard button {
-  background-color: ;
+  font-family: Nosifer;
+  background-color: rgb(121, 8, 8);
+  outline:1px solid black;
+  border-radius: 5px;
+  
 }
 
+.game-over {
+  position: fixed;
+  background-color:black;
+  border-radius: 2em; 
+
+  
+}
+.game-over .content {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  padding: 1em;
+}
+
+.game-over .play-again {
+  size: 1em;background-color: rgb(121, 8, 8);
+}
 
 
 

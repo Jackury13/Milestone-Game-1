@@ -3,65 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="word-list.js" defer></script>
+    <script src="app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> <title>Zombie Hangman</title>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> 
+    
+<title>Zombie Hangman</title>
+
+
 </head>
 
 <body>
+    <div hidden class="game-over">
+        <div class="content">
+            <!--find new image sourse for game over image and delete game over text
+            <img src="https://pngtree.com/freepng/game-over-text-effect-with-red-blood_6008532.html?sol=downref&id=bef" alt="horror PNG Designed By ahmadsyabani">-->
+            <h3>Game Over!</h3>
+            <p>the correct word was <b>blood</b> </p>
+            <button class="play-again">
+                Play Again?
+            </button>
+        </div>
+    </div>
+
+    <!--entire container-->
 <div class="container">
     <div class="hangman-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Hangman-0.png">
         <h1>Zombie Hangman</h1>
     </div>
+
+<!-- work to be guessed key board and hint here -->
     <div class="game-box">
         <ul class="word-display">
-            <li class="letter">b</li>
-            <li class="letter"></li>
-            <li class="letter">a</li>
-            <li class="letter"></li>
-            <li class="letter">s</li>
-            <li class="letter"></li>
         </ul>
-        <h2 class="hint">
+
+
+        <h2 class="hint-text">
             Hint:
-            <p>write hint here</p>
+            <p>hint</p>
         </h2>
+
+
         <h2 class="guesses-text">
             Wrong guesses:
-            <p>0 / 6</p>
+            <b>0 / 6</b>
         </h2>
+
+
         <div class="keyboard">
-            <button>a</button>
-            <button>b</button>
-            <button>c</button>
-            <button>d</button>
-            <button>e</button>
-            <button>f</button>
-            <button>g</button>
-            <button>h</button>
-            <button>i</button>
-            <button>j</button>
-            <button>k</button>
-            <button>l</button>
-            <button>m</button>
-            <button>n</button>
-            <button>o</button>
-            <button>p</button>
-            <button>q</button>
-            <button>r</button>
-            <button>s</button>
-            <button>t</button>
-            <button>u</button>
-            <button>v</button>
-            <button>w</button>
-            <button>x</button>
-            <button>y</button>
-            <button>z</button>
-        </div>
+        </div>    
+        
     </div>
 </div>
 
