@@ -1,9 +1,10 @@
 const wordDisplay = document.querySelector(".word-display")
 const livesLeft = document.querySelector(".points p")
 const keyboard = document.querySelector(".keyboard")
+const youLose = document.querySelector(".game-over")
+const survive = document.querySelector(".you-survived")
 
-
-let currentWord, wrongGuessCount = '0';
+let currentWord, wrongGuessCount = '0', correctGuesses;
 const maxGuesses = 6;
 //selecting random word and hint from word-list.js file
 const getRandomWord = function() {
@@ -30,9 +31,15 @@ const initHorde = (_button, clickedLetter) => {
         wrongGuessCount++;
     }
     livesLeft.innerText = `${wrongGuessCount} / ${maxGuesses}`;
+
+if (wrongGuessCount === maxGuesses) return youLose(true); 
+if (correctGuesses === currentWord.innerText) return survive(true);
 }
+
+
+
 //keyboard
-for(let i = 97; i<122; i++) {
+for(let i = 97; i<123; i++) {
     const button = document.createElement("button");
     button.classList.add("letters")
     button.innerText = String.fromCharCode(i)
