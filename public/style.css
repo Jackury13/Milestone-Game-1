@@ -4,13 +4,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(https://images.pexels.com/photos/5409941/pexels-photo-5409941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://pixabay.com/get/ga33461853ab0c2ac6afb2a06368d4d20817a7b59361b0785cdde588bea2d6d27613a97b3a6197a242041df2f772bd218faf7144d0a6cf6ee50b6ecc76444a9c9_1280.jpg);
     font-family: Nosifer;
 }
 
-.container {
-    width: 850px;
-    background: rgb(216, 214, 214);
+.game-container {
+    width: 700px;
+    background: rgb(216, 214, 214, .7);
     display: flex;
     gap: 70px;
     align-items: flex-end;
@@ -18,11 +18,12 @@ body {
     border-radius: 10px;
 }
 .hangman-container img{
-    max-width: 300px;
+    max-width: 350px;
     
 }
 
 .hangman-container h1 {
+    width: auto;
     font-size: 2em;
     margin-top: 10px;
     text-align: center;
@@ -31,28 +32,28 @@ body {
 
 .word-display  {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
     list-style: none;
-    gap: 10px;
+    padding-right: 20px;
     
 }
 
-.word-display .letter {
+.letter {
     width: 28px;
     font-size: 2.5em;
-    text-align: center;
     font-family: Nosifer;
     text-transform: uppercase;
+    text-align: center;
     
-    margin-bottom: 60px;
     border: 5px rgb(130, 8, 8);
     border-bottom: 3px solid rgb(121, 8, 8);
 }
 
-.word-display .letter .guessed {
+.guessed {
   border-color: transparent;
-  margin: -30px, 0, 30px;
+  margin: -30px, 0, 30px, 0;
+  
 
 }
 
@@ -62,12 +63,13 @@ body {
   margin-bottom: 10px;
 }
 
-.game-box .guesses-text p {
+.points p {
     color: rgb(121, 8, 8);
   
 }
 
-.game-box .keyboard {
+
+.keyboard {
   display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -88,19 +90,30 @@ justify-content: center;
 
   
 }
-.game-over .content {
+.game-over-content {
   text-align: center;
   font-size: 2em;
   color: white;
   padding: 1em;
 }
 
-.game-over .play-again {
+.play-again {
   size: 1em;background-color: rgb(121, 8, 8);
 }
 
+.you-survived {
+  position: fixed;
+  background-color:black;
+  border-radius: 2em; 
 
-
+}
+.you-survived-content
+{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  padding: 1em;
+}
 
 
 

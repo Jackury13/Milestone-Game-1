@@ -10,32 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> 
     
-<title>Zombie Hangman</title>
+<title>Zombie Horde</title>
 
 
 </head>
 
 <body>
-    <div hidden class="game-over">
-        <div class="content">
-            <!--find new image sourse for game over image and delete game over text
-            <img src="https://pngtree.com/freepng/game-over-text-effect-with-red-blood_6008532.html?sol=downref&id=bef" alt="horror PNG Designed By ahmadsyabani">-->
-            <h3>Game Over!</h3>
-            <p>the correct word was <b>blood</b> </p>
-            <button class="play-again">
-                Play Again?
-            </button>
-        </div>
-    </div>
-
-    <!--entire container-->
-<div class="container">
+     <!--entire main game container-->
+<div class="game-container">
     <div class="hangman-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Hangman-0.png">
-        <h1>Zombie Hangman</h1>
+        <h1>Zombie Horde</h1>
     </div>
 
-<!-- word to be guessed, keyboard, and hint here -->
+                <!-- word to be guessed, keyboard, and hint here -->
     <div class="game-box">
         <ul class="word-display">
         </ul>
@@ -47,7 +35,7 @@
         </h2>
 
 
-        <h2 class="guesses-text">
+        <h2 class="points">
             Wrong guesses:
             <p>0 / 6</p>
         </h2>
@@ -58,7 +46,22 @@
         
     </div>
 </div>
-
-
+<div hidden class="game-over">
+        <div class="game-over-content">
+            <h3>Game Over!</h3>
+            <p>Blood</p>
+            <button class="play-again">
+                Play Again?
+            </button>
+        </div>
+    </div>
+<div hidden class="you-survived">
+        <div class="you-survived-content">
+            <h3>You Survived!</h3>
+            <button class="play-again">
+                Play Again?
+            </button>
+        </div>
+</div>
 </body>
-</htmdiv
+</html>
