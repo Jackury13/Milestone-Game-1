@@ -41,7 +41,8 @@ const initHorde = (_button, clickedLetter) => {
         }
             livesLeft.innerText = `${wrongGuessCount} / ${maxGuesses}`;
 
-//if (wrongGuessCount === maxGuesses) return youLose(false);            console.log(correctGuesses);
+
+            console.log(correctGuesses);
             console.log(currentWord);
 
 
