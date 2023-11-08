@@ -3,7 +3,6 @@ const livesLeft = document.querySelector(".points p")
 const keyboard = document.querySelector(".keyboard")
 const youLose = document.querySelector(".game-over")
 const survive = document.querySelector(".you-survived")
-const playAgain = document.querySelector(".play-again button")
 
 
 let currentWord, wrongGuessCount = '0';
@@ -37,18 +36,17 @@ const initHorde = (_button, clickedLetter) => {
             });
             
         } else {
-        wrongGuessCount++;
-        _button.disabled = true;
-       }
-       livesLeft.innerText = `${wrongGuessCount} / ${maxGuesses}`;
-   
-     //if (wrongGuessCount === maxGuesses) return youLose(false);
-     console.log(correctGuesses);
-     console.log(currentWord);
+            wrongGuessCount++;
+            _button.disabled = true;
+        }
+            livesLeft.innerText = `${wrongGuessCount} / ${maxGuesses}`;
+
+//if (wrongGuessCount === maxGuesses) return youLose(false);            console.log(correctGuesses);
+            console.log(currentWord);
 
 
     if (correctGuesses.length === currentWord.length) {
-        // winner
+        // winner div
         console.log('Winner', survive)
         survive.style.visibility = "visible"
         for(const element of correctGuesses) {
@@ -62,7 +60,7 @@ const initHorde = (_button, clickedLetter) => {
 
 
     if (wrongGuessCount === maxGuesses) {
-        // loser
+        // loser div
         console.log('loser', youLose)
         youLose.style.visibility = "visible"
         for(const element of maxGuesses) {

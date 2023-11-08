@@ -19,6 +19,7 @@ body {
 }
 .hangman-container img{
     max-width: 350px;
+    max-height: 350px;
     
 }
 
@@ -28,9 +29,7 @@ body {
     margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
-    /* https://cdn.pixabay.com/photo/2023/11/04/09/26/zombie-8364517_1280.jpg     link for replacement zombies when losing zombies running
     
-    */
 }
 
 .word-display  {
