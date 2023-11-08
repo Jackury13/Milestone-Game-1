@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(https://pixabay.com/get/ga33461853ab0c2ac6afb2a06368d4d20817a7b59361b0785cdde588bea2d6d27613a97b3a6197a242041df2f772bd218faf7144d0a6cf6ee50b6ecc76444a9c9_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2023/11/03/17/40/ai-generated-8363571_1280.png);
     font-family: Nosifer;
 }
 
@@ -28,6 +28,9 @@ body {
     margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
+    /* https://cdn.pixabay.com/photo/2023/11/04/09/26/zombie-8364517_1280.jpg     link for replacement zombies when losing zombies running
+    
+    */
 }
 
 .word-display  {
@@ -84,6 +87,7 @@ justify-content: center;
 }
 
 .game-over {
+  visibility: hidden;
   position: fixed;
   background-color:black;
   border-radius: 2em; 
@@ -102,6 +106,7 @@ justify-content: center;
 }
 
 .you-survived {
+  visibility: hidden;
   position: fixed;
   background-color:black;
   border-radius: 2em; 
